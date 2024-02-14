@@ -28,6 +28,11 @@ body{
     box-sizing: inherit;
 }
 
+ul{
+    list-style: none;
+    padding: 1rem;
+}
+
 h1{
     font-size: 5rem;
 }
@@ -160,28 +165,28 @@ img{
     border-radius: 1rem;
 }
 
-.servicio{
+.red{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.servicio h3{
+.red h3{
     color: var(--principal);
     font-weight: normal;
     font-size: 2.5rem;
 }
 
-.servicio p{
+.red p{
     line-height: 2;
     text-align: center;
 }
 
-.servicios{
+.redes{
     border-bottom: solid 1px var(--negro);
 }
 
-.servicios .iconos{
+.redes .iconos{
     height: 15em;
     width: 15rem;
     background-color: var(--principal);
@@ -192,7 +197,7 @@ img{
 }
 
 @media (min-width: 768px){
-    .servicios{
+    .redes{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
@@ -217,6 +222,7 @@ img{
     text-align: center;
 }
 
+
 @media (max-width: 768px){
     .mapa{
         flex-wrap: wrap-reverse;
@@ -225,10 +231,12 @@ img{
 
 .mapa h2{
     font-size: 3.3rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mapa h3{
     font-size: 2.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .horarios{
@@ -243,7 +251,7 @@ footer{
     background-color: var(--principal);
     padding: 1rem;
     text-align: center;
-    margin-top: 3rem;
+    /*margin-top: 3rem;*/
     width: 100%;
 }
 
@@ -278,6 +286,7 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 2rem;
 }
 
 .quien-soy {
@@ -310,7 +319,7 @@ footer p{
     background-size: cover;
     height: 450px;
     position: relative;
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
     background-position: center center;
     border-top-left-radius: 20%;
     margin-top: 2rem;
@@ -343,11 +352,76 @@ footer p{
     color: var(--negro);
     background-color: var(--blanco);
     border-radius: 1.5rem;
-    /*border: 2px solid var(--negro);*/
     transition: background-color 0.3s, color 0.3s;
 }
 
 .boton-contactanos:hover {
     background-color: var(--negro);
     color: var(--blanco);
+}
+
+
+/*-----------------------------------------*/
+
+/*Servicios*/
+
+.contenedor-servicios {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.contenedor-servicios :last-child {
+    border: none;
+}
+
+.contenedor-imagen-servicio{
+    max-width: 30rem;
+    max-height: 30rem;
+}
+
+.imagen-servicio {
+    width: 100%; 
+    height: 100%;
+}
+
+@media (max-width: 768px){
+    .contenedor-imagen-servicio{
+        max-width: 15rem;
+        max-height: 15rem;
+
+        min-width: 15rem;
+        min-height: 15rem;
+    }
+}
+
+.cards-servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.servicios {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    border-bottom: #000 solid 0.1rem;
+}
+
+.contenedor-card-servicio{
+    margin-left: 2rem;
+}
+
+.contenedor-card-servicio h2{
+    text-align: start;
+}
+
+#main-principal{
+    margin-bottom: 2rem;
 }
