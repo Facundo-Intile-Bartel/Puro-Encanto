@@ -388,12 +388,31 @@ footer p{
 }
 
 @media (max-width: 768px){
-    .contenedor-imagen-servicio{
-        max-width: 15rem;
-        max-height: 15rem;
+    .contenedor-imagen-servicio {
+        max-width: 100%;
+        max-height: auto;
+        margin-bottom: 1rem;
+    }
 
-        min-width: 15rem;
-        min-height: 15rem;
+    .contenedor-card-servicio {
+        margin-left: 0;
+    }
+
+    .contenedor-card-servicio h2 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .imagen-servicio {
+        width: 100%;
+        height: auto;
+    }
+
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: #000 solid 0.1rem;
+        padding-bottom: 1rem;
     }
 }
 
